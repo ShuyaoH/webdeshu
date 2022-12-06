@@ -1,3 +1,31 @@
+html {
+	line-height: inherit;
+	min-height: 100%;
+	margin: 0;
+}
+
 body {
   font-family: Andale Mono,AndaleMono,monospace;
+  margin: 0;
+  background-color: #87ffe7;
+}
+
+/* Style the background of the navigation bar */
+.topnavbar {
+  background-color: #5c5c5c;
+}
+
+/* Style the texts/links inside of the navigation bar */
+.topnavbar a {
+  color: white;
+  font-size: 17px;
+  text-decoration: none;
+  text-align: center;
+  padding: 15px 15px;
+  display: inline-block;
+}
+
+/* Change of colors when links on hover */
+.topnavbar a:hover {
+  background-color: #3d3d3d;
 }
