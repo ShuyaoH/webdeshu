@@ -9,11 +9,34 @@
 </head>
 
 <body>
+
+<!-- the whole navigation bar -->
   <div class="topnavbar">
-    <a class="active" href="index.html">Home</a>
-    <a href="GnuPG.html">GnuPG</a>
-    <a href="#ACNH">ACNH</a>
+<!-- Logo -->
+    <img class="logo" src="favicon.png">
+<!-- Hamburger list -->
+    <input type="checkbox" id="checkbox_toggle">
+    <label for="checkbox_toggle" class="hamburger">
+<!-- Navigation bar links -->
+    <div class="menu">
+      <ul>
+        <a href="index.html">Home</a>
+        <a href="GnuPG.html">GnuPG</a>
+        <li class="ACNH">
+          <a href="#ACNH">ACNH</a>
+          <ul class="dropdown">
+            <li><a href="#fortrade">For Trade</a></li>
+            <li><a href="#wishlist">Wishlist</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
   </div>
-  <p>Hello I am Shu.</p>
-  <p>You can find my For Trade list and Wishlist for Animal Crossing New Horizons in ACNH page which you can find on the navigation bar.</p>
+
+<!-- Introduction -->
+  <div class="intro">
+    <p>Hello I am Shu.</p>
+    <p>You can find my For Trade list and Wishlist for Animal Crossing New Horizons in ACNH page which you can find on the navigation bar.</p>
+  </div>
+
 </body>
