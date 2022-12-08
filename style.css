@@ -7,25 +7,67 @@ html {
 body {
   font-family: Andale Mono,AndaleMono,monospace;
   margin: 0;
-  background-color: #87ffe7;
+  padding: 0;
 }
 
 /* Style the background of the navigation bar */
 .topnavbar {
-  background-color: #5c5c5c;
+  background-color: #909090;
+  align-items: center;
+	display: flex;
+	justify-content: space-between;
 }
 
-/* Style the texts/links inside of the navigation bar */
+/* Style logo */
+.logo {
+  width: auto;
+  height: 1.5em;
+	opacity: 0.5;
+  margin: inherit;
+	margin-left: 5em;
+	padding: 1em;
+}
+
+/* Style each link in the navigation bar */
 .topnavbar a {
   color: white;
-  font-size: 17px;
+  font-size: 20px;
   text-decoration: none;
   text-align: center;
-  padding: 15px 15px;
   display: inline-block;
+	padding: 1em;
 }
 
-/* Change of colors when links on hover */
+/* Style all links as a whole */
+.topnavbar ul {
+  display: flex;
+	margin: inherit;
+	justify-content: space-between;
+	margin-right: 3em;
+}
+
+/* Style link of ACNH */
+.topnavbar li {
+  list-style: none;
+}
+
+/* Style dropdown links of ACNH */
+.dropdown li {
+  list-style: none;
+  display: none;
+}
+
+.logo:hover {
+	opacity: 0.8;
+	transition: 0.5s;
+}
+
 .topnavbar a:hover {
-  background-color: #3d3d3d;
+	background-color: #7d7d7d;
+	color: #3c3c3c;
+	transition: 0.3s ease;
+}
+
+input[type=checkbox] {
+	display: none;
 }
