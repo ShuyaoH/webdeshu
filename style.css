@@ -28,46 +28,52 @@ body {
 	padding: 1em;
 }
 
-/* Style each link in the navigation bar */
-.topnavbar a {
-  color: white;
-  font-size: 20px;
-  text-decoration: none;
-  text-align: center;
-  display: inline-block;
-	padding: 1em;
-}
-
-/* Style all links as a whole */
-.topnavbar ul {
-  display: flex;
-	margin: inherit;
-	justify-content: space-between;
-	margin-right: 3em;
-}
-
-/* Style link of ACNH */
-.topnavbar li {
-  list-style: none;
-}
-
-/* Style dropdown links of ACNH */
-.dropdown li {
-  list-style: none;
-  display: none;
-}
-
 .logo:hover {
 	opacity: 0.8;
 	transition: 0.5s;
 }
 
-.topnavbar a:hover {
+/* Style the menu */
+.menu li {
+	list-style: none;
+	display: inline-flex;
+	position: relative;
+}
+
+.links {
+	display: inline-flex;
+	margin: inherit;
+}
+
+/* Style each link(text) in the navigation bar */
+.menu a {
+	text-decoration: none;
+	list-style: none;
+	font-size: 20px;
+	color: white;
+	padding: 1em;
+}
+
+.menu a:hover {
 	background-color: #7d7d7d;
 	color: #3c3c3c;
 	transition: 0.3s ease;
 }
 
-input[type=checkbox] {
+/* Style the dropdown menu */
+.dropdown {
 	display: none;
+	background-color: #909090;
+	padding: 0;
+	position: absolute;
+	top: 3.5em;
+	right: 2.5em;
+}
+
+.dropdown li {
+	text-align: center;
+}
+
+.ACNH:hover .dropdown {
+	display: block;
 }
