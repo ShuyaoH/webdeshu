@@ -12,19 +12,75 @@ body {
 	margin: 0;
 }
 
+/* Style the background of the navigation bar */
 .topnavbar {
-  background-color: #5c5c5c;
+  background-color: #909090;
+  align-items: center;
+	display: flex;
+	justify-content: space-between;
 }
 
-.topnavbar a {
-  color: white;
-	font-size: 17px;
+/* Style logo */
+.logo {
+  width: auto;
+  height: 1.5em;
+	opacity: 0.5;
+  margin: inherit;
+	margin-left: 5em;
+	padding: 1em;
+}
+
+.logo:hover {
+	opacity: 0.8;
+	transition: 0.5s;
+}
+
+/* Style the menu */
+.menu li {
+	list-style: none;
+	display: inline-flex;
+	position: relative;
+}
+
+.links {
+	display: inline-flex;
+	margin: inherit;
+}
+
+/* Style each link(text) in the navigation bar */
+.menu a {
 	text-decoration: none;
-	text-align: center;
-	padding: 15px 15px;
-	display: inline-block;
+	list-style: none;
+	font-size: 20px;
+	color: white;
+	padding: 1em;
 }
 
+.menu a:hover {
+	background-color: #7d7d7d;
+	color: #3c3c3c;
+	transition: 0.3s ease;
+}
+
+/* Add hover and style the dropdown menu */
+.dropdown {
+	display: none;
+	background-color: #909090;
+	padding: 0;
+	position: absolute;
+	top: 3.5em;
+	right: 2.5em;
+}
+
+.dropdown li {
+	text-align: center;
+}
+
+.ACNH:hover .dropdown {
+	display: block;
+}
+
+/* Main body */
 p.greet {
 	position: relative;
 	text-align: center;
@@ -45,11 +101,7 @@ p.Title {
 }
 
 div.GnuPGPublicKey {
-	text-align: justify;
-	margin-left: 40%;
-}
-
-p.PublicKey {
+	text-align: center;
 	font-size: 10px;
 }
 
